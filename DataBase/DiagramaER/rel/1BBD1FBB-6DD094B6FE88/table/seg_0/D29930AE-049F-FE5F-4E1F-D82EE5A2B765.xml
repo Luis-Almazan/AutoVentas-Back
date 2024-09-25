@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D29930AE-049F-FE5F-4E1F-D82EE5A2B765" name="ANULACION_VENTAS">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:03:03 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_ANULACION" id="C5FAFB3E-6510-4B24-DBD0-E6F277B114DD">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:04:36 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_NOTA_CREDITO" id="352DFA58-FB1D-E0A5-62DD-4AE13EBBC9AF">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:04:36 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="57214663-6DDE-B4F7-3E0E-6978F8824506" referredColumn="085F0567-C5A6-9C33-DB72-3AB21BF9C6F9"/>
+</associations>
+</Column>
+<Column name="COD_VENTA" id="B8E827CE-4AFD-B1C1-6BE4-908190BCB62F">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:04:36 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4146539E-73E5-105D-0C2B-52D8C24E52A3" referredColumn="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
+</associations>
+</Column>
+<Column name="MOTIVO_ANULACION" id="2BF0A3DF-DDA2-6AC4-154C-5F01CB6894CC">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:04:36 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0DF1A14-8F9B-2724-003A-AD4994523AAB" name="ANULACION_VENTAS_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:04:36 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5FAFB3E-6510-4B24-DBD0-E6F277B114DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC08C6C1-E616-1838-0886-DE0041B9A4AB" name="ANULACION_VENTAS_NOTAS_CREDITO_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:39:43 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="352DFA58-FB1D-E0A5-62DD-4AE13EBBC9AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19BF586E-2E48-8B7B-8635-5CE4DE6493AE" name="ANULACION_VENTAS_VENTA_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:40:02 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8E827CE-4AFD-B1C1-6BE4-908190BCB62F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

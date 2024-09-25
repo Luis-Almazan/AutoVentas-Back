@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFCCBC40-687A-252A-1847-CB2FC023D898" name="UBICACION">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:12:52 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_UBICACION" id="8D19905A-BFB6-CC20-F22F-3B0B36C8B69D">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:13:42 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="C913F6A9-5F52-0A27-E01F-0917810E118F">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:13:42 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="0468299F-EDFB-025B-2971-B9346B14D24C">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:13:42 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="369860AC-3908-4AD5-F6A9-3AD2642735E8" name="UBICACION_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:13:42 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D19905A-BFB6-CC20-F22F-3B0B36C8B69D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25747B7A-366C-8548-6A49-A75C8D8F74CE" name="DETALLE_VENTA">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:59:20 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_DETALLE_VENTA" id="691CDDB7-1F01-B364-362E-C8B2A9139760">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:00:41 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_VENTA" id="FD75B4AC-C551-BBC2-EBC6-800AE738EA23">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:00:41 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7F6E8F6-74DA-D1E3-9FBC-09C5BC566F03" referredColumn="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
+</associations>
+</Column>
+<Column name="COD_PRODUCTO" id="4CD1AB1A-CE75-3C70-C552-6DA764B5236B">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:00:41 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B5460E2-39ED-6FEF-6F9A-4A346C361A7C" referredColumn="F14B56A9-8444-488D-DA5C-EF092730D605"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="C1E2688B-4C70-5A66-AFCE-C2FC6AFCFE30">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:00:41 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBTOTAL" id="666C124D-0159-0EB3-2360-87671FD66FD1">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:00:41 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="1BBD3425-3D9E-308B-A273-F07FB09431D4">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:06:38 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_DEVOLUCION_PRODUCTO" id="4491C8F9-43B7-520D-CB65-31D40EC936A5">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:13:12 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B944E82-1936-142C-075E-9ACEC3DDC0E2" referredColumn="8D516EB9-99A7-C2A3-EC9E-8D66A44AE4D8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E2BD390-E8DB-30A0-F10E-59F398079171" name="DETALLE_VENTA_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:00:41 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="691CDDB7-1F01-B364-362E-C8B2A9139760"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63FEA2AD-E232-A34F-0D6E-FC32E8B92E06" name="DETALLE_VENTA_VENTA_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:35:11 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD75B4AC-C551-BBC2-EBC6-800AE738EA23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3429B409-8DE0-C9D6-0F67-3D19029E9927" name="DETALLE_VENTA_PRODUCTO_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:35:11 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CD1AB1A-CE75-3C70-C552-6DA764B5236B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C62B3BE2-47C5-2C74-CCBD-D0DBD5E76581" name="DETALLE_VENTA_DEVOLUCION_PRODUCTOS_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:13:53 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4491C8F9-43B7-520D-CB65-31D40EC936A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

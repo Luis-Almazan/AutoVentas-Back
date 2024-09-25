@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D655A4E4-753B-C904-EE75-1342920F0E43" name="NOTAS_CREDITO">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:00:51 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_NOTA_CREDITO" id="085F0567-C5A6-9C33-DB72-3AB21BF9C6F9">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:02:53 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_CLIENTE" id="6C1485EC-2E78-101A-F0BB-C6326BFB9329">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:02:53 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="58A216F7-C5FB-E125-06E2-692B9464FF00" referredColumn="46419072-0C5D-68D2-DB00-5DFC4E410BAF"/>
+</associations>
+</Column>
+<Column name="TIPO_NOTA" id="9C56E0D0-C73F-59C7-4B0D-26D60A483BF5">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:02:53 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_NOTA" id="982D2463-1235-F460-C598-11FE378F65C2">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:02:53 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL" id="3ADD9836-DEAD-B5AC-AD61-B60E1BE3752B">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:02:53 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_VENTA" id="437C0604-6ABB-41CC-3B30-683AC6C17CEE">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:04:18 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="704EFECD-5265-651D-861E-B8B6C6FE6B15" referredColumn="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BAE55BAC-413E-AF28-78CA-23F4D73B5F09" name="NOTAS_CREDITO_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:02:53 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="085F0567-C5A6-9C33-DB72-3AB21BF9C6F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75DB1321-372D-9D1B-3FF9-5FB9967861B6" name="NOTAS_CREDITO_CLIENTES_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:38:19 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C1485EC-2E78-101A-F0BB-C6326BFB9329"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8684E100-3392-BDB8-1BE5-55CCC9D5BAE3" name="NOTAS_CREDITO_VENTA_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:04:50 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="437C0604-6ABB-41CC-3B30-683AC6C17CEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

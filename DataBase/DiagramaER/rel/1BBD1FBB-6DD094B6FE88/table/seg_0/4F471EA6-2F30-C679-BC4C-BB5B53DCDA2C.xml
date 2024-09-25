@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F471EA6-2F30-C679-BC4C-BB5B53DCDA2C" name="DEVOLUCION_PRODUCTOS">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:04:50 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_DEVOLUCION" id="8D516EB9-99A7-C2A3-EC9E-8D66A44AE4D8">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:06:37 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_NOTA_CREDITO" id="CDF0DDE7-635B-BCBF-ED97-3ADAD11A90A4">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:06:37 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="020E34E5-A5D5-EC54-26A2-95D92878B91A" referredColumn="085F0567-C5A6-9C33-DB72-3AB21BF9C6F9"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="470711BB-E2C6-0BB0-EA8C-684DE590E76A">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:06:37 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOTIVO_DEVOLUCION" id="75F457B1-1A31-F798-E5AB-B956B94C40CE">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:06:37 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4AD1B389-BDA1-8DBB-2B7C-86858E2C403F" name="DEVOLUCION_PRODUCTOS_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:06:37 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D516EB9-99A7-C2A3-EC9E-8D66A44AE4D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBAF69E9-B52B-5B0C-CF46-4A440E1A07BD" name="DEVOLUCION_PRODUCTOS_NOTAS_CREDITO_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:41:22 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDF0DDE7-635B-BCBF-ED97-3ADAD11A90A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

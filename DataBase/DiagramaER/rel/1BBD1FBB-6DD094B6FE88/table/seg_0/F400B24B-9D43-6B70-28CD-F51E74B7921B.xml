@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F400B24B-9D43-6B70-28CD-F51E74B7921B" name="CATEGORIA">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:07:30 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CATEGORIA" id="CBF83A06-EAA9-D09D-2F2A-A0AAAD012B42">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:09:17 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="816F3AC7-EC0E-9616-5F13-D507429C5BD0">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:09:17 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="97F9F615-2B9C-E0DB-75CF-2590973F223A">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:09:17 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3056F024-1A00-DA4D-DC12-B5BCC0B7A425" name="CATEGORIA_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:09:17 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CBF83A06-EAA9-D09D-2F2A-A0AAAD012B42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

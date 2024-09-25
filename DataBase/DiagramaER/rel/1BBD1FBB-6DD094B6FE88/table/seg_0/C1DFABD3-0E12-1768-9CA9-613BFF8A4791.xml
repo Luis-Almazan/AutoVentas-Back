@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1DFABD3-0E12-1768-9CA9-613BFF8A4791" name="VENTA">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:56:58 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_VENTA" id="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:59:04 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1B11FCE-49F4-F327-0795-485A0F0489AC" referredColumn="FBDC1BBD-2A7D-F53B-FF11-A3377906F47B"/>
+</associations>
+</Column>
+<Column name="COD_CLIENTE" id="A645DA7B-070F-FF6E-D802-196C90B3DA17">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:59:04 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3FDCC232-198C-3DEF-3EB2-7C75C89E60DE" referredColumn="46419072-0C5D-68D2-DB00-5DFC4E410BAF"/>
+</associations>
+</Column>
+<Column name="FECHA_VENTA" id="B4021B3F-0039-5BA6-B275-AA08264FCF4E">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:59:04 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL_VENTA" id="555F2BE0-A2AA-A676-61B3-74D1570C7A1B">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:59:04 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_VENTA" id="F1EB943C-728C-EB88-0B77-17BB24D81BBF">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:59:04 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_ANULACION_VENTA" id="4BBE4BDF-FE20-99A3-EAC8-48DBDDCD9FAA">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:15:52 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC7860CA-CC8E-1137-3770-B317E960BB94" name="VENTA_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:59:04 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D18D5D8-7102-1A07-2FF1-1E27E112D947" name="VENTA_STATUS_VENTA_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:22:37 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="93105294-F6F5-38A0-E9A6-8CC914AA928A" name="VENTA_CLIENTES_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:37:26 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A645DA7B-070F-FF6E-D802-196C90B3DA17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

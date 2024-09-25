@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7DE664FE-F382-8BF2-197E-3ED2F27214B4" containerWithKeyObject="EC4D8775-92F3-38CB-8BFF-30C264A0D052" localFKIndex="1865C551-D4C1-8239-0C1C-B5F0133DD900" name="PRODUCTO_UBICACION_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:24:44 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<referredTableLongName>UBICACION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EFCCBC40-687A-252A-1847-CB2FC023D898</referredTableID>
+<keyObject>369860AC-3908-4AD5-F6A9-3AD2642735E8</keyObject>
+<referredKeyID>369860AC-3908-4AD5-F6A9-3AD2642735E8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_UBICACION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

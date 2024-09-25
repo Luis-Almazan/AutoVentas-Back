@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10AE01AC-4127-3031-4115-FFB81614BC83" name="ENTREGA_PAQUETE">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:38:13 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_ENTREGA" id="2CA5CA56-E2A2-7835-DC89-6EA35C556162">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:40:27 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="54CAE129-E682-222C-6716-D4CA40FBF017">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:40:27 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACIONES" id="064AE150-8DB6-6639-900E-01B3C4123289">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:40:27 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_CLIENTE" id="8704F645-19EB-0BD3-535D-746167C63F4E">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:46:32 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7E37951-B667-EAAE-B2AF-3B7D592CF879" referredColumn="46419072-0C5D-68D2-DB00-5DFC4E410BAF"/>
+</associations>
+</Column>
+<Column name="COD_VENTA" id="94B95F2F-D1F7-FA99-2A07-39CE6B0BA502">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:46:32 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A5A56C4-72B7-2811-8BE6-E92AB8F32A43" referredColumn="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91531864-69F4-70BC-7682-C878B919292B" name="ENTREGA_PAQUETE_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:40:27 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CA5CA56-E2A2-7835-DC89-6EA35C556162"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BF5028C-F792-2AFE-B563-6B1971D4BA2D" name="ENTREGA_PAQUETE_CLIENTES_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:46:55 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8704F645-19EB-0BD3-535D-746167C63F4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D406F6E-C2D7-FB4D-B48E-C080204DB6B8" name="ENTREGA_PAQUETE_VENTA_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 03:46:55 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94B95F2F-D1F7-FA99-2A07-39CE6B0BA502"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

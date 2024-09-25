@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="57214663-6DDE-B4F7-3E0E-6978F8824506" containerWithKeyObject="D29930AE-049F-FE5F-4E1F-D82EE5A2B765" localFKIndex="FC08C6C1-E616-1838-0886-DE0041B9A4AB" name="ANULACION_VENTAS_NOTAS_CREDITO_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:39:43 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<referredTableLongName>NOTAS_CREDITO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D655A4E4-753B-C904-EE75-1342920F0E43</referredTableID>
+<keyObject>BAE55BAC-413E-AF28-78CA-23F4D73B5F09</keyObject>
+<referredKeyID>BAE55BAC-413E-AF28-78CA-23F4D73B5F09</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_NOTA_CREDITO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

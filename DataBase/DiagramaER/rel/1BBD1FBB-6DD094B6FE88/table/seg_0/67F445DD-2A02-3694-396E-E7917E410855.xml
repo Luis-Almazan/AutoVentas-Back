@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="67F445DD-2A02-3694-396E-E7917E410855" name="CLIENTES">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:45:11 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CLIENTE" id="46419072-0C5D-68D2-DB00-5DFC4E410BAF">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_NOMBRE" id="3623A84E-5635-7950-6D72-1A9198FA1787">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="ADFD8A74-D47F-270B-8C40-4640E7A08CCC">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="7D82CB11-ABB8-65D0-F8FD-E54A6140F00C">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="ABAC74E5-A9CF-309E-58B7-0EABC1B05B4E">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>75</dataTypeSize>
+<ownDataTypeParameters>75,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIT" id="42A04314-B1C8-6A88-0E94-2CFE3F444609">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCION_CLIENTE" id="1D08AD7D-7918-7E3B-EF3C-BF40815AAE8D">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORIA_CLIENTE" id="BC5AA313-F3B8-FA8D-C8F4-529DC91D447F">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3250B443-99DD-4EC1-A6F6-3B88FEC39A2C" referredColumn="CBF83A06-EAA9-D09D-2F2A-A0AAAD012B42"/>
+</associations>
+</Column>
+<Column name="STATUS" id="B9E989E3-7D1C-276F-531D-6C12DA97FE7F">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4AA28849-21BA-F416-FEA7-1E4B05C78DF7" name="CLIENTES_PK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 01:54:00 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46419072-0C5D-68D2-DB00-5DFC4E410BAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D273194-A10B-19FD-A4B4-106095C5E5BD" name="CLIENTES_CATEGORIA_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-09-25 02:18:33 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC5AA313-F3B8-FA8D-C8F4-529DC91D447F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
