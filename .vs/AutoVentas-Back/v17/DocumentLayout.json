@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|d:\\10. repositorios\\1_universidad\\proyecto\\backend\\autoventas-back\\controllers\\controllerclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:controllers\\controllerclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|d:\\10. repositorios\\1_universidad\\proyecto\\backend\\autoventas-back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Luis Almazan\\AppData\\Local\\SourceServer\\24f446c08d3180f36cb1e9e31e40d228899934c05683a82ebca42e6f5f4643fe\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|d:\\10. repositorios\\1_universidad\\proyecto\\backend\\autoventas-back\\models\\querycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:models\\querycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|d:\\10. repositorios\\1_universidad\\proyecto\\backend\\autoventas-back\\models\\operationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:models\\operationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|d:\\10. repositorios\\1_universidad\\proyecto\\backend\\autoventas-back\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|d:\\10. repositorios\\1_universidad\\proyecto\\backend\\autoventas-back\\models\\modelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:models\\modelcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T23:07:02.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Luis Almazan\\AppData\\Local\\SourceServer\\24f446c08d3180f36cb1e9e31e40d228899934c05683a82ebca42e6f5f4643fe\\Program.cs",
+              "ToolTip": "C:\\Users\\Luis Almazan\\AppData\\Local\\SourceServer\\24f446c08d3180f36cb1e9e31e40d228899934c05683a82ebca42e6f5f4643fe\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T23:01:47.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModelContext.cs",
+              "DocumentMoniker": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Models\\ModelContext.cs",
+              "RelativeDocumentMoniker": "Models\\ModelContext.cs",
+              "ToolTip": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Models\\ModelContext.cs",
+              "RelativeToolTip": "Models\\ModelContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:55:50.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OperationContext.cs",
+              "DocumentMoniker": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Models\\OperationContext.cs",
+              "RelativeDocumentMoniker": "Models\\OperationContext.cs",
+              "ToolTip": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Models\\OperationContext.cs",
+              "RelativeToolTip": "Models\\OperationContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:43:11.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QueryContext.cs",
+              "DocumentMoniker": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Models\\QueryContext.cs",
+              "RelativeDocumentMoniker": "Models\\QueryContext.cs",
+              "ToolTip": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Models\\QueryContext.cs",
+              "RelativeToolTip": "Models\\QueryContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:41:47.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ControllerClient.cs",
+              "DocumentMoniker": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Controllers\\ControllerClient.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControllerClient.cs",
+              "ToolTip": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\Controllers\\ControllerClient.cs",
+              "RelativeToolTip": "Controllers\\ControllerClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T19:53:03.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-29T19:49:40.806Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

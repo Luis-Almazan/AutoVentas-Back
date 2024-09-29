@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\10. Repositorios\\1_Universidad\\Desarrollo_Web\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj": {}
+    "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj": {}
   },
   "projects": {
-    "D:\\10. Repositorios\\1_Universidad\\Desarrollo_Web\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj": {
+    "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\10. Repositorios\\1_Universidad\\Desarrollo_Web\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj",
+        "projectUniqueName": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj",
         "projectName": "AutoVentas-Back",
-        "projectPath": "D:\\10. Repositorios\\1_Universidad\\Desarrollo_Web\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj",
+        "projectPath": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj",
         "packagesPath": "C:\\Users\\Luis Almazan\\.nuget\\packages\\",
-        "outputPath": "D:\\10. Repositorios\\1_Universidad\\Desarrollo_Web\\Proyecto\\Backend\\AutoVentas-Back\\obj\\",
+        "outputPath": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Luis Almazan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,6 +59,10 @@
             "Oracle.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.23.50, )"
+            },
+            "Oracle.ManagedDataAccess.Core": {
+              "target": "Package",
+              "version": "[23.5.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

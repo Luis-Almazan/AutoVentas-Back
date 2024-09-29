@@ -1,9 +1,20 @@
+using AutoVentas_Back.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("Oracle_Conexion");
+// Registrar ModelContext como el contexto base
+builder.Services.AddDbContext<ModelContext>(options =>
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleQueryUser")));
 
-//builder.Services.AddDbContext<ModelContext>(options =>
-//    options.UseOracle(connectionString));
+
+// Registrar QueryContext para consultas
+builder.Services.AddDbContext<QueryContext>(options =>
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleQueryUser")));
+
+// Registrar OperationContext para operaciones
+builder.Services.AddDbContext<OperationContext>(options =>
+    options.UseOracle(builder.Configuration.GetConnectionString("OracleOperationUser")));
 
 
 
