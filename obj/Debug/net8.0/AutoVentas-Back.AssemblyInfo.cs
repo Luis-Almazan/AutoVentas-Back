@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoVentas-Back")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd28d754ead880116091a5a898703688f2d3006")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38bbb340ae146f01e079708918817ef3044241ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoVentas-Back")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoVentas-Back")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class QueryContext : ModelContext
 {
-    public QueryContext(DbContextOptions<ModelContext> options)
+    public QueryContext(DbContextOptions<QueryContext> options)
     : base(options)
     {
     }

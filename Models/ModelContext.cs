@@ -7,8 +7,8 @@ namespace AutoVentas_Back.Models;
 public partial class ModelContext : DbContext
 {
 
-    public ModelContext(DbContextOptions<ModelContext> options)
-        : base(options)
+    public ModelContext(DbContextOptions options)
+           : base(options)
     {
     }
 
@@ -16,13 +16,10 @@ public partial class ModelContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            // Solo entra aquí si no se configuró la cadena de conexión, pero ya lo hacemos desde `Startup` o `Program`.
-            throw new InvalidOperationException("The context was not configured.");
+            // No configurar nada aquí, la configuración de la cadena de conexión se manejará al registrar los contextos
         }
     }
-    public ModelContext()
-    {
-    }
+    
 
     public virtual DbSet<AnulacionVenta> AnulacionVentas { get; set; }
 

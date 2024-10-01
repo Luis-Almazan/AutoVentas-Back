@@ -21,7 +21,7 @@ public partial class Cliente
 
     public decimal CategoriaCliente { get; set; }
 
-    public string? Status { get; set; }
+    public decimal Status { get; set; }
 
     public virtual ICollection<EntregaPaquete> EntregaPaquetes { get; set; } = new List<EntregaPaquete>();
 

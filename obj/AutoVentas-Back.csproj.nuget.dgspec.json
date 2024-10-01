@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj": {}
+    "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\AutoVentas-Back.csproj": {}
   },
   "projects": {
-    "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj": {
+    "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\AutoVentas-Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj",
+        "projectUniqueName": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\AutoVentas-Back.csproj",
         "projectName": "AutoVentas-Back",
-        "projectPath": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\AutoVentas-Back.csproj",
-        "packagesPath": "C:\\Users\\Luis Almazan\\.nuget\\packages\\",
-        "outputPath": "D:\\10. Repositorios\\1_Universidad\\Proyecto\\Backend\\AutoVentas-Back\\obj\\",
+        "projectPath": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\AutoVentas-Back.csproj",
+        "packagesPath": "C:\\Users\\Luis.almazan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Luis Almazan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luis.almazan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

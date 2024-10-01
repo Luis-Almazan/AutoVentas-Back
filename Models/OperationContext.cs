@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class OperationContext : ModelContext
 {
-    public OperationContext(DbContextOptions<ModelContext> options)
+    public OperationContext(DbContextOptions<OperationContext> options)
     : base(options)
     {
     }
