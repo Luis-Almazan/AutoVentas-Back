@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|c:\\users\\luis.almazan\\documents\\repo\\autoventas-back\\models\\actualizarstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:models\\actualizarstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|c:\\users\\luis.almazan\\documents\\repo\\autoventas-back\\controllers\\controllerclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:controllers\\controllerclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|c:\\users\\luis.almazan\\documents\\repo\\autoventas-back\\database\\archivo.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:database\\archivo.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|c:\\users\\luis.almazan\\documents\\repo\\autoventas-back\\models\\actualizarstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|solutionrelative:models\\actualizarstatusrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75EC3067-C42A-4F85-87A8-D21592B512C3}|AutoVentas-Back.csproj|c:\\users\\luis.almazan\\documents\\repo\\autoventas-back\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ControllerClient.cs",
+              "DocumentMoniker": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\Controllers\\ControllerClient.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControllerClient.cs",
+              "ToolTip": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\Controllers\\ControllerClient.cs",
+              "RelativeToolTip": "Controllers\\ControllerClient.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T03:09:05.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ActualizarStatusRequest.cs",
               "DocumentMoniker": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\Models\\ActualizarStatusRequest.cs",
               "RelativeDocumentMoniker": "Models\\ActualizarStatusRequest.cs",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "Models\\ActualizarStatusRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T04:19:16.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T04:19:16.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Models\\Cliente.cs",
@@ -55,8 +71,7 @@
               "RelativeToolTip": "Models\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:59:31.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:59:31.437Z"
             },
             {
               "$type": "Document",
@@ -72,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ModelContext.cs",
               "DocumentMoniker": "C:\\Users\\Luis.almazan\\Documents\\Repo\\AutoVentas-Back\\Models\\ModelContext.cs",
               "RelativeDocumentMoniker": "Models\\ModelContext.cs",
@@ -80,8 +95,7 @@
               "RelativeToolTip": "Models\\ModelContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:26:45.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:26:45.443Z"
             }
           ]
         }

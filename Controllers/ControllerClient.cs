@@ -13,8 +13,6 @@ namespace AutoVentas_Back.Controllers
         private readonly QueryContext _queryContext;
         private readonly OperationContext _operationContext;
 
-
-        // Inyectar QueryContext en el constructor
         public ControllerClient(QueryContext queryContext, OperationContext operationContext)
         {
             _queryContext = queryContext;
@@ -22,7 +20,6 @@ namespace AutoVentas_Back.Controllers
 
         }
 
-        // Nuevo método para obtener la lista de clientes
         [HttpGet]
         [Route("ObtenterClientes")]
         public async Task<IActionResult> GetClientes()
@@ -55,11 +52,6 @@ namespace AutoVentas_Back.Controllers
             return Ok(clientes); // Devuelve los clientes filtrados en formato JSON
         }
 
-
-
-
-
-        // POST: api/cliente/crear
         [HttpPost]  
         [Route("CrearCliente")]
         public async Task<IActionResult> CrearCliente([FromBody] Cliente nuevoCliente)
@@ -94,19 +86,15 @@ namespace AutoVentas_Back.Controllers
         [Route("ActualizarStatus")]
         public async Task<IActionResult> ActualizarStatus([FromBody] ActualizarStatusRequest request)
         {
-            // Buscar el cliente en la base de datos utilizando el contexto de consultas (QueryContext)
-            var cliente = await _queryContext.Clientes
-                                             .FirstOrDefaultAsync(c => c.CodCliente == request.CodCliente);
+            // Buscar el cliente directamente en OperationContext para evitar el uso de múltiples contextos
+            var cliente = await _operationContext.Clientes.FirstOrDefaultAsync(c => c.CodCliente == request.CodCliente);
 
             if (cliente == null)
             {
                 return NotFound($"No se encontró el cliente con código: {request.CodCliente}");
             }
 
-            // Utilizar OperationContext para aplicar los cambios
-            _operationContext.Attach(cliente);
-
-            // Actualizamos solo el campo Status del cliente
+            // Actualizar el campo Status
             cliente.Status = request.Status;
 
             try
@@ -121,6 +109,7 @@ namespace AutoVentas_Back.Controllers
                 return StatusCode(500, $"Error al actualizar el estado: {ex.Message} | {ex.InnerException?.Message}");
             }
         }
+
 
 
 
