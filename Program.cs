@@ -1,12 +1,17 @@
-using AutoVentas_Back.Models;
+
+using AutoVentas_Back.Repositories;
+using AutoVentas_Back.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Registrar ModelContext como el contexto base
-//builder.Services.AddDbContext<ModelContext>(options =>
-//    options.UseOracle(builder.Configuration.GetConnectionString("OracleOperationUser")));
-
+// Registrar servicios
+builder.Services.AddControllers();
+// Registrar el servicio ClienteService
+// Registrar los repositorios y servicios
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
 
 // Registrar QueryContext para consultas
 builder.Services.AddDbContext<QueryContext>(options =>

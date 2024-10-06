@@ -1,4 +1,4 @@
-﻿using AutoVentas_Back.Models;
+﻿using AutoVentas_Back.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
 public class OperationContext : ModelContext

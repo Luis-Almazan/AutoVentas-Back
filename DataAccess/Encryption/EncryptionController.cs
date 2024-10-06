@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace AutoVentas_Back.Controllers
+namespace AutoVentas_Back.DataAccess.Encryption
 {
     [Route("api/[controller]")]
     [ApiController]

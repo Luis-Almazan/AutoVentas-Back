@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AutoVentas_Back.Models;
+namespace AutoVentas_Back.DataAccess.Models;
 
 public partial class Proveedor
 {

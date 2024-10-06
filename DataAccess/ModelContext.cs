@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using AutoVentas_Back.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace AutoVentas_Back.Models;
+namespace AutoVentas_Back.DataAccess;
 
 public partial class ModelContext : DbContext
 {
@@ -19,7 +20,7 @@ public partial class ModelContext : DbContext
             // No configurar nada aquí, la configuración de la cadena de conexión se manejará al registrar los contextos
         }
     }
-    
+
 
     public virtual DbSet<AnulacionVenta> AnulacionVentas { get; set; }
 
