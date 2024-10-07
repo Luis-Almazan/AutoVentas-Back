@@ -6,12 +6,47 @@ using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Registrar servicios
 builder.Services.AddControllers();
-// Registrar el servicio ClienteService
+
+
+
 // Registrar los repositorios y servicios
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+
+// Registrar Sercicios
 builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IProductoService, ProductoService>();
+//Encripcion de String 
+var configuration = builder.Configuration;
+string encryptionKey = configuration["EncryptionKey"];
+
+if (string.IsNullOrWhiteSpace(encryptionKey))
+{
+    throw new InvalidOperationException("La clave de encriptación no está definida. Verifica las variables de entorno.");
+}
+
+// Desencriptar las cadenas de conexión
+var QueryUserConnection = Encription.DecryptConnectionString(configuration.GetConnectionString("OracleQueryUser"), encryptionKey);
+var OperationUserConnection = Encription.DecryptConnectionString(configuration.GetConnectionString("OracleOperationUser"), encryptionKey);
+
+// Registrar QueryContext para consultas
+builder.Services.AddDbContext<QueryContext>(options =>
+    options.UseOracle(QueryUserConnection));
+
+// Registrar OperationContext para operaciones
+builder.Services.AddDbContext<OperationContext>(options =>
+    options.UseOracle(OperationUserConnection));
+
+
+/*
+   "ConnectionStrings": {
+    "OracleQueryUser": "User Id=USR_DESAWEB;Password=DESAWEB123;Data Source=34.172.95.117:1521/xe;",
+    "OracleOperationUser": "User Id=OP_DESAWEB;Password=DESAWEB123;Data Source=34.172.95.117:1521/xe;"
+rop+MXM0MOJfISIgAkHzbm3NbINDpbZgyceVlmfoWJxyZaAANdgFu6VEVsUWRaNfe85FKJ5QHu0j0Rs4nWSwVGurPEVgk5FAtzbDKyIQf6iPt34thWOZ87BP03TmrElW
+SukLJ6WEc+VpxGkirGss30PByKNEVKgTtdWu9r6G8G/7l06QnnEOzEzVP+/6aUilXOfl4tHVBFUtJjQBe4LRLRDs+RjOo3rCIlcZHN+xmFBnsSEEUL+qXD9F0nyBfMeO
+
+  },
 
 // Registrar QueryContext para consultas
 builder.Services.AddDbContext<QueryContext>(options =>
@@ -20,7 +55,7 @@ builder.Services.AddDbContext<QueryContext>(options =>
 // Registrar OperationContext para operaciones
 builder.Services.AddDbContext<OperationContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("OracleOperationUser")));
-
+ */
 
 
 // Add services to the container.
