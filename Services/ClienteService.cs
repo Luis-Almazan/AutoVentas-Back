@@ -26,10 +26,17 @@ namespace AutoVentas_Back.Services
 
         public async Task<Cliente> CrearClienteAsync(Cliente nuevoCliente)
         {
+            // Obtener el valor máximo de CodCliente
+            var maxCodCliente = await _clienteRepository.GetMaxCodClienteAsync();
+
+            // Asignar el siguiente número en la secuencia
+            nuevoCliente.CodCliente = maxCodCliente + 1;
+
             await _clienteRepository.AddClienteAsync(nuevoCliente);
             await _clienteRepository.SaveChangesAsync();
             return nuevoCliente;
         }
+
 
         public async Task<Cliente> ActualizarClienteAsync(decimal codCliente, Cliente clienteActualizado)
         {

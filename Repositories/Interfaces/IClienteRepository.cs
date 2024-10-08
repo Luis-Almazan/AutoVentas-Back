@@ -10,6 +10,7 @@ namespace AutoVentas_Back.Repositories
         Task<List<Cliente>> GetClientesPorStatusAsync(decimal status);
         Task<Cliente> GetClienteByIdAsync(decimal codCliente);
         Task AddClienteAsync(Cliente cliente);
+        Task<decimal> GetMaxCodClienteAsync();
         Task UpdateClienteAsync(Cliente cliente);
         Task DeleteClienteAsync(Cliente cliente);
         Task SaveChangesAsync();

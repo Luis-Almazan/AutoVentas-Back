@@ -35,7 +35,11 @@ namespace AutoVentas_Back.Repositories
         {
             await _operationContext.Clientes.AddAsync(cliente);
         }
-
+        public async Task<decimal> GetMaxCodClienteAsync()
+        {
+            var maxCodCliente = await _queryContext.Clientes.MaxAsync(c => (decimal?)c.CodCliente) ?? 0;
+            return maxCodCliente;
+        }
         public async Task UpdateClienteAsync(Cliente cliente)
         {
             _operationContext.Clientes.Update(cliente);

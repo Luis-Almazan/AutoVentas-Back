@@ -1,6 +1,7 @@
 
 using AutoVentas_Back.Repositories;
 using AutoVentas_Back.Services;
+using AutoVentas_Back.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
 
@@ -8,15 +9,26 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-
-
 // Registrar los repositorios y servicios
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+builder.Services.AddScoped<IProveedorRepository, ProveedorRepository>();
+builder.Services.AddScoped<IUbicacionRepository, UbicacionRepository>();
+builder.Services.AddScoped<IStatusVentaRepository, StatusVentaRepository>();
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>(); 
+
 
 // Registrar Sercicios
 builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IProveedorService, ProveedorService>();
+builder.Services.AddScoped<IUbicacionService, UbicacionService>();
+builder.Services.AddScoped<IStatusVentaService, StatusVentaService>();
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+
+
+
+
 //Encripcion de String 
 var configuration = builder.Configuration;
 string encryptionKey = configuration["EncryptionKey"];
@@ -57,9 +69,6 @@ builder.Services.AddDbContext<OperationContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("OracleOperationUser")));
  */
 
-
-// Add services to the container.
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

@@ -1,4 +1,5 @@
 ﻿using AutoVentas_Back.DataAccess.Models;
+using AutoVentas_Back.DataAccess.Models.Utils;
 using AutoVentas_Back.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;

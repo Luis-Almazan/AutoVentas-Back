@@ -9,6 +9,7 @@ namespace AutoVentas_Back.Repositories
         Task<List<Producto>> GetProductosAsync();
         Task<Producto> GetProductoByIdAsync(decimal codProducto);
         Task AddProductoAsync(Producto producto);
+        Task<decimal> GetMaxCodProductoAsync();
         Task UpdateProductoAsync(Producto producto);
         Task DeleteProductoAsync(Producto producto);
         Task SaveChangesAsync();

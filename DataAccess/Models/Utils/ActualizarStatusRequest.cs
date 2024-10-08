@@ -1,4 +1,4 @@
-﻿namespace AutoVentas_Back.DataAccess.Models
+﻿namespace AutoVentas_Back.DataAccess.Models.Utils
 {
     public class ActualizarStatusRequest
     {

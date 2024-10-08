@@ -26,6 +26,12 @@ namespace AutoVentas_Back.Services
 
         public async Task<Producto> CrearProductoAsync(Producto nuevoProducto)
         {
+            // Obtener el valor máximo de CodProducto
+            var maxCodProducto = await _productoRepository.GetMaxCodProductoAsync();
+
+            // Asignar el siguiente número en la secuencia
+            nuevoProducto.CodProducto = maxCodProducto + 1;
+
             await _productoRepository.AddProductoAsync(nuevoProducto);
             await _productoRepository.SaveChangesAsync();
             return nuevoProducto;
