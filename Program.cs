@@ -15,7 +15,9 @@ builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 builder.Services.AddScoped<IProveedorRepository, ProveedorRepository>();
 builder.Services.AddScoped<IUbicacionRepository, UbicacionRepository>();
 builder.Services.AddScoped<IStatusVentaRepository, StatusVentaRepository>();
-builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>(); 
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped<IVentaRepository, VentaRepository>();
+
 
 
 // Registrar Sercicios
@@ -25,7 +27,7 @@ builder.Services.AddScoped<IProveedorService, ProveedorService>();
 builder.Services.AddScoped<IUbicacionService, UbicacionService>();
 builder.Services.AddScoped<IStatusVentaService, StatusVentaService>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
-
+builder.Services.AddScoped<IVentaService, VentaService>();
 
 
 
