@@ -7,7 +7,22 @@ using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 builder.Services.AddControllers();
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PermitirAngularLocalhost", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+
 
 // Registrar los repositorios y servicios
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
@@ -15,7 +30,8 @@ builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 builder.Services.AddScoped<IProveedorRepository, ProveedorRepository>();
 builder.Services.AddScoped<IUbicacionRepository, UbicacionRepository>();
 builder.Services.AddScoped<IStatusVentaRepository, StatusVentaRepository>();
-builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>(); 
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped<IDetalleVentaRepository, DetalleVentaRepository>();
 
 
 // Registrar Sercicios
@@ -25,7 +41,7 @@ builder.Services.AddScoped<IProveedorService, ProveedorService>();
 builder.Services.AddScoped<IUbicacionService, UbicacionService>();
 builder.Services.AddScoped<IStatusVentaService, StatusVentaService>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
-
+builder.Services.AddScoped<IDetalleVentaService, DetalleVentaService>();
 
 
 
@@ -73,7 +89,7 @@ builder.Services.AddDbContext<OperationContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
-
+app.UseCors("PermitirAngularLocalhost");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
