@@ -32,6 +32,8 @@ builder.Services.AddScoped<IUbicacionRepository, UbicacionRepository>();
 builder.Services.AddScoped<IStatusVentaRepository, StatusVentaRepository>();
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IDetalleVentaRepository, DetalleVentaRepository>();
+builder.Services.AddScoped<IVentaRepository, VentaRepository>();
+
 
 
 // Registrar Sercicios
@@ -42,6 +44,7 @@ builder.Services.AddScoped<IUbicacionService, UbicacionService>();
 builder.Services.AddScoped<IStatusVentaService, StatusVentaService>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IDetalleVentaService, DetalleVentaService>();
+builder.Services.AddScoped<IVentaService, VentaService>();
 
 
 
@@ -51,10 +54,10 @@ string encryptionKey = configuration["EncryptionKey"];
 
 if (string.IsNullOrWhiteSpace(encryptionKey))
 {
-    throw new InvalidOperationException("La clave de encriptación no está definida. Verifica las variables de entorno.");
+    throw new InvalidOperationException("La clave de encriptaciÃ³n no estÃ¡ definida. Verifica las variables de entorno.");
 }
 
-// Desencriptar las cadenas de conexión
+// Desencriptar las cadenas de conexiÃ³n
 var QueryUserConnection = Encription.DecryptConnectionString(configuration.GetConnectionString("OracleQueryUser"), encryptionKey);
 var OperationUserConnection = Encription.DecryptConnectionString(configuration.GetConnectionString("OracleOperationUser"), encryptionKey);
 
@@ -97,7 +100,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     app.UseDeveloperExceptionPage();
 }
-// Mapea la ruta raíz ("/") para devolver la versión
+// Mapea la ruta raÃ­z ("/") para devolver la versiÃ³n
 app.MapGet("/", () => Results.Json(new { Version = "1.0.0" }));
 app.UseHttpsRedirection();
 app.UseAuthorization();
