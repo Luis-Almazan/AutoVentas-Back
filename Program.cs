@@ -7,7 +7,22 @@ using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 builder.Services.AddControllers();
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PermitirAngularLocalhost", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+
 
 // Registrar los repositorios y servicios
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
@@ -16,6 +31,7 @@ builder.Services.AddScoped<IProveedorRepository, ProveedorRepository>();
 builder.Services.AddScoped<IUbicacionRepository, UbicacionRepository>();
 builder.Services.AddScoped<IStatusVentaRepository, StatusVentaRepository>();
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddScoped<IDetalleVentaRepository, DetalleVentaRepository>();
 builder.Services.AddScoped<IVentaRepository, VentaRepository>();
 
 
@@ -27,6 +43,7 @@ builder.Services.AddScoped<IProveedorService, ProveedorService>();
 builder.Services.AddScoped<IUbicacionService, UbicacionService>();
 builder.Services.AddScoped<IStatusVentaService, StatusVentaService>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IDetalleVentaService, DetalleVentaService>();
 builder.Services.AddScoped<IVentaService, VentaService>();
 
 
@@ -37,10 +54,10 @@ string encryptionKey = configuration["EncryptionKey"];
 
 if (string.IsNullOrWhiteSpace(encryptionKey))
 {
-    throw new InvalidOperationException("La clave de encriptaciÛn no est· definida. Verifica las variables de entorno.");
+    throw new InvalidOperationException("La clave de encriptaci√≥n no est√° definida. Verifica las variables de entorno.");
 }
 
-// Desencriptar las cadenas de conexiÛn
+// Desencriptar las cadenas de conexi√≥n
 var QueryUserConnection = Encription.DecryptConnectionString(configuration.GetConnectionString("OracleQueryUser"), encryptionKey);
 var OperationUserConnection = Encription.DecryptConnectionString(configuration.GetConnectionString("OracleOperationUser"), encryptionKey);
 
@@ -75,7 +92,7 @@ builder.Services.AddDbContext<OperationContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
-
+app.UseCors("PermitirAngularLocalhost");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -83,7 +100,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     app.UseDeveloperExceptionPage();
 }
-// Mapea la ruta raÌz ("/") para devolver la versiÛn
+// Mapea la ruta ra√≠z ("/") para devolver la versi√≥n
 app.MapGet("/", () => Results.Json(new { Version = "1.0.0" }));
 app.UseHttpsRedirection();
 app.UseAuthorization();
