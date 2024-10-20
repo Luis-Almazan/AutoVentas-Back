@@ -19,18 +19,12 @@ namespace AutoVentas_Back.Repositories
         // Operaciones de lectura usando QueryContext
         public async Task<List<Producto>> GetProductosAsync()
         {
-            return await _queryContext.Productos
-                .Include(p => p.CodProveedorNavigation)  // Cargar la relación con el proveedor
-                .Include(p => p.UbicacionNavigation)     // Cargar la relación con la ubicación
-                .ToListAsync();
+            return await _queryContext.Productos.ToListAsync();
         }
 
         public async Task<Producto> GetProductoByIdAsync(decimal codProducto)
         {
-            return await _queryContext.Productos
-                .Include(p => p.CodProveedorNavigation)
-                .Include(p => p.UbicacionNavigation)
-                .FirstOrDefaultAsync(p => p.CodProducto == codProducto);
+            return await _queryContext.Productos.FirstOrDefaultAsync(p => p.CodProducto == codProducto);
         }
 
         // Operaciones de escritura usando OperationContext

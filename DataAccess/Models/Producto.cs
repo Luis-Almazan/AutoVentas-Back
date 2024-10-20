@@ -21,9 +21,9 @@ public partial class Producto
 
     public decimal? Status { get; set; }
 
-    public virtual Proveedor CodProveedorNavigation { get; set; } = null!;
+    public virtual Proveedor? CodProveedorNavigation { get; set; } = null!;
 
     public virtual ICollection<DetalleVentum> DetalleVenta { get; set; } = new List<DetalleVentum>();
 
-    public virtual Ubicacion UbicacionNavigation { get; set; } = null!;
+    public virtual Ubicacion? UbicacionNavigation { get; set; } = null!;
 }

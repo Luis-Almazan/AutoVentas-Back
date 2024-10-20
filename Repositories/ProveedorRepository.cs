@@ -20,14 +20,14 @@ namespace AutoVentas_Back.Repositories
         public async Task<List<Proveedor>> GetProveedoresAsync()
         {
             return await _queryContext.Proveedors
-                .Include(p => p.Productos)  // Cargar la relación con productos
+                //.Include(p => p.Productos)  // Cargar la relación con productos
                 .ToListAsync();
         }
 
         public async Task<Proveedor> GetProveedorByIdAsync(decimal codProveedor)
         {
             return await _queryContext.Proveedors
-                .Include(p => p.Productos)
+               // .Include(p => p.Productos)
                 .FirstOrDefaultAsync(p => p.CodProveedor == codProveedor);
         }
 

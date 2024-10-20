@@ -19,14 +19,14 @@ namespace AutoVentas_Back.Repositories
         public async Task<List<Ubicacion>> GetUbicacionesAsync()
         {
             return await _queryContext.Ubicacions
-                .Include(u => u.Productos) // Cargar la relación con productos
+               // .Include(u => u.Productos) // Cargar la relación con productos
                 .ToListAsync();
         }
 
         public async Task<Ubicacion> GetUbicacionByIdAsync(decimal codUbicacion)
         {
             return await _queryContext.Ubicacions
-                .Include(u => u.Productos)
+              //  .Include(u => u.Productos)
                 .FirstOrDefaultAsync(u => u.CodUbicacion == codUbicacion);
         }
 
