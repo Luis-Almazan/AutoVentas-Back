@@ -60,6 +60,19 @@ namespace AutoVentas_Back.Services
             return productoExistente;
         }
 
+        public async Task<Producto> ActualizarStatusAsync(decimal codProducto, decimal status)
+        {
+            var producto = await _productoRepository.GetProductoByIdAsync(codProducto);
+            if (producto != null)
+            {
+                producto.Status = status;
+                await _productoRepository.UpdateProductoAsync(producto);
+                await _productoRepository.SaveChangesAsync();
+            }
+
+            return producto;
+        }
+
         public async Task<bool> BorrarProductoAsync(decimal codProducto)
         {
             var producto = await _productoRepository.GetProductoByIdAsync(codProducto);

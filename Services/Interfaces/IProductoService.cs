@@ -10,6 +10,7 @@ namespace AutoVentas_Back.Services
         Task<Producto> GetProductoByIdAsync(decimal codProducto);
         Task<Producto> CrearProductoAsync(Producto nuevoProducto);
         Task<Producto> ActualizarProductoAsync(decimal codProducto, Producto productoActualizado);
+        Task<Producto> ActualizarStatusAsync(decimal codProducto, decimal status);
         Task<bool> BorrarProductoAsync(decimal codProducto);
     }
 }

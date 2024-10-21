@@ -1,4 +1,5 @@
 ﻿using AutoVentas_Back.DataAccess.Models;
+using AutoVentas_Back.DataAccess.Models.Utils;
 using AutoVentas_Back.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
@@ -64,6 +65,19 @@ namespace AutoVentas_Back.Controllers
                 return NotFound($"No se encontró el producto con código: {codProducto}");
             }
             return Ok(new { message = "Producto actualizado exitosamente", producto });
+        }
+
+        [HttpPost]
+        [Route("ActualizarStatus")]
+        public async Task<IActionResult> ActualizarStatus([FromBody] ActualizarStatus request)
+        {
+            var producto = await _productoService.ActualizarStatusAsync(request.CodProducto, request.Status);
+            if (producto == null)
+            {
+                return NotFound($"No se encontró el producto con código: {request.CodProducto}");
+            }
+
+            return Ok(new { message = "Status de producto actualizado exitosamente", producto });
         }
 
         [HttpDelete]
