@@ -17,9 +17,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A1B11FCE-49F4-F327-0795-485A0F0489AC" referredColumn="FBDC1BBD-2A7D-F53B-FF11-A3377906F47B"/>
-</associations>
 </Column>
 <Column name="COD_CLIENTE" id="A645DA7B-070F-FF6E-D802-196C90B3DA17">
 <createdBy>PC-GERMY</createdBy>
@@ -65,6 +62,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B69DB87-DA95-E38F-9575-F5D980FA16D2" referredColumn="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
+</associations>
 </Column>
 <Column name="COD_ANULACION_VENTA" id="4BBE4BDF-FE20-99A3-EAC8-48DBDDCD9FAA">
 <createdBy>PC-GERMY</createdBy>
@@ -90,16 +90,6 @@
 <colUsage columnID="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3D18D5D8-7102-1A07-2FF1-1E27E112D947" name="VENTA_STATUS_VENTA_FK">
-<createdBy>PC-GERMY</createdBy>
-<createdTime>2024-09-25 02:22:37 UTC</createdTime>
-<ownerDesignName>DiagramaER</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="1D859C7E-ACAB-5071-D422-7BCA1A73A4DB"/>
-</indexColumnUsage>
-</ind_PK_UK>
 <ind_PK_UK id="93105294-F6F5-38A0-E9A6-8CC914AA928A" name="VENTA_CLIENTES_FK">
 <createdBy>PC-GERMY</createdBy>
 <createdTime>2024-09-25 02:37:26 UTC</createdTime>
@@ -108,6 +98,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A645DA7B-070F-FF6E-D802-196C90B3DA17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15809F20-2B0B-C3AE-8AF5-9BF3D5D26D49" name="VENTA_VENTA_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-10-24 06:18:54 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1EB943C-728C-EB88-0B77-17BB24D81BBF"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

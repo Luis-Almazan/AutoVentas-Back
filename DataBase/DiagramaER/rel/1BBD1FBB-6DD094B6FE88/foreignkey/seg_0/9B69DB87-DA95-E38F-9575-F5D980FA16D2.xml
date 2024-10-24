@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9B69DB87-DA95-E38F-9575-F5D980FA16D2" containerWithKeyObject="C1DFABD3-0E12-1768-9CA9-613BFF8A4791" localFKIndex="15809F20-2B0B-C3AE-8AF5-9BF3D5D26D49" name="VENTA_VENTA_FK">
+<createdBy>PC-GERMY</createdBy>
+<createdTime>2024-10-24 06:18:54 UTC</createdTime>
+<ownerDesignName>DiagramaER</ownerDesignName>
+<referredTableLongName>VENTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C1DFABD3-0E12-1768-9CA9-613BFF8A4791</referredTableID>
+<keyObject>BC7860CA-CC8E-1137-3770-B317E960BB94</keyObject>
+<referredKeyID>BC7860CA-CC8E-1137-3770-B317E960BB94</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>COD_VENTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
