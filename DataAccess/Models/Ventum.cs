@@ -17,15 +17,15 @@ public partial class Ventum
 
     public decimal? CodAnulacionVenta { get; set; }
 
-    public virtual ICollection<AnulacionVenta> AnulacionVenta { get; set; } = new List<AnulacionVenta>();
+    public virtual ICollection<AnulacionVenta>? AnulacionVenta { get; set; } = new List<AnulacionVenta>();
 
-    public virtual Cliente CodClienteNavigation { get; set; } = null!;
+    public virtual Cliente? CodClienteNavigation { get; set; } = null!;
 
-    public virtual StatusVentum CodVentaNavigation { get; set; } = null!;
+    public virtual StatusVentum? CodVentaNavigation { get; set; } = null!;
 
-    public virtual ICollection<DetalleVentum> DetalleVenta { get; set; } = new List<DetalleVentum>();
+    public virtual ICollection<DetalleVentum>? DetalleVenta { get; set; } = new List<DetalleVentum>();
 
-    public virtual ICollection<EntregaPaquete> EntregaPaquetes { get; set; } = new List<EntregaPaquete>();
+    public virtual ICollection<EntregaPaquete>? EntregaPaquetes { get; set; } = new List<EntregaPaquete>();
 
     public virtual ICollection<NotasCredito> NotasCreditos { get; set; } = new List<NotasCredito>();
 }

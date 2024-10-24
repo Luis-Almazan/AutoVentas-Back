@@ -19,14 +19,14 @@ namespace AutoVentas_Back.Repositories
         public async Task<List<StatusVentum>> GetStatusVentasAsync()
         {
             return await _queryContext.StatusVenta
-                .Include(s => s.Ventum) // Cargar la relación con Ventum
+                //.Include(s => s.Ventum) // Cargar la relación con Ventum
                 .ToListAsync();
         }
 
         public async Task<StatusVentum> GetStatusVentaByIdAsync(decimal codVenta)
         {
             return await _queryContext.StatusVenta
-                .Include(s => s.Ventum)
+                //.Include(s => s.Ventum)
                 .FirstOrDefaultAsync(s => s.CodVenta == codVenta);
         }
 
