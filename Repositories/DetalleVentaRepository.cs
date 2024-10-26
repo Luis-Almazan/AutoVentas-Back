@@ -19,18 +19,18 @@ namespace AutoVentas_Back.Repositories
         public async Task<List<DetalleVentum>> GetDetallesVentaAsync()
         {
             return await _queryContext.DetalleVenta
-                .Include(d => d.CodProductoNavigation) // Cargar la relación con Producto
-                .Include(d => d.CodVentaNavigation)    // Cargar la relación con Venta
-                .Include(d => d.CodDevolucionProductoNavigation) // Cargar la relación con DevoluciónProducto
+                //.Include(d => d.CodProductoNavigation) // Cargar la relación con Producto
+                //.Include(d => d.CodVentaNavigation)    // Cargar la relación con Venta
+                //.Include(d => d.CodDevolucionProductoNavigation) // Cargar la relación con DevoluciónProducto
                 .ToListAsync();
         }
 
         public async Task<DetalleVentum> GetDetalleVentaByIdAsync(decimal codDetalleVenta)
         {
             return await _queryContext.DetalleVenta
-                .Include(d => d.CodProductoNavigation)
-                .Include(d => d.CodVentaNavigation)
-                .Include(d => d.CodDevolucionProductoNavigation)
+                //.Include(d => d.CodProductoNavigation)
+                //.Include(d => d.CodVentaNavigation)
+                //.Include(d => d.CodDevolucionProductoNavigation)
                 .FirstOrDefaultAsync(d => d.CodDetalleVenta == codDetalleVenta);
         }
 

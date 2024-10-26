@@ -1,5 +1,6 @@
 ﻿using AutoVentas_Back.DataAccess.Models;
 using AutoVentas_Back.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -35,6 +36,23 @@ namespace AutoVentas_Back.Services
             await _detalleVentaRepository.AddDetalleVentaAsync(nuevoDetalleVenta);
             await _detalleVentaRepository.SaveChangesAsync();
             return nuevoDetalleVenta;
+        }
+
+        public async Task CrearDetallesVentaAsync(List<DetalleVentum> detallesVenta)
+        {
+            // Obtener el valor máximo de CodDetalleVenta una sola vez al inicio
+            var maxCodDetalleVenta = await _detalleVentaRepository.GetMaxCodDetalleVentaAsync();
+
+            foreach (var detalle in detallesVenta)
+            {
+                // Incrementar el valor de maxCodDetalleVenta para cada detalle
+                maxCodDetalleVenta++;
+                detalle.CodDetalleVenta = maxCodDetalleVenta;
+                // Agregar el detalle con el nuevo CodDetalleVenta
+                await _detalleVentaRepository.AddDetalleVentaAsync(detalle);
+            }
+            // Guardar todos los cambios en una sola transacción
+            await _detalleVentaRepository.SaveChangesAsync();
         }
 
         public async Task<DetalleVentum> ActualizarDetalleVentaAsync(decimal codDetalleVenta, DetalleVentum detalleVentaActualizado)

@@ -17,11 +17,11 @@ public partial class DetalleVentum
 
     public decimal? Status { get; set; }
 
-    public decimal CodDevolucionProducto { get; set; }
+    public decimal? CodDevolucionProducto { get; set; }
 
-    public virtual DevolucionProducto CodDevolucionProductoNavigation { get; set; } = null!;
+    public virtual DevolucionProducto? CodDevolucionProductoNavigation { get; set; } = null!;
 
-    public virtual Producto CodProductoNavigation { get; set; } = null!;
+    public virtual Producto? CodProductoNavigation { get; set; } = null!;
 
-    public virtual Ventum CodVentaNavigation { get; set; } = null!;
+    public virtual Ventum? CodVentaNavigation { get; set; } = null!;
 }

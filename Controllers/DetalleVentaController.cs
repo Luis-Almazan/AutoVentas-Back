@@ -1,6 +1,7 @@
 ﻿using AutoVentas_Back.DataAccess.Models;
 using AutoVentas_Back.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -56,6 +57,41 @@ namespace AutoVentas_Back.Controllers
             var detalleCreado = await _detalleVentaService.CrearDetalleVentaAsync(nuevoDetalleVenta);
             return CreatedAtAction(nameof(GetDetalleVentaById), new { codDetalleVenta = detalleCreado.CodDetalleVenta }, detalleCreado);
         }
+
+
+        [HttpPost]
+        [Route("CrearDetallesVenta")]
+        public async Task<IActionResult> CrearDetallesVenta([FromBody] List<DetalleVentum> detallesVenta)
+        {
+            // Validación de la lista de detalles
+            if (detallesVenta == null || !detallesVenta.Any())
+            {
+                return BadRequest("La lista de detalles de venta está vacía o es nula.");
+            }
+
+            // Validación individual de cada detalle en la lista
+            foreach (var detalle in detallesVenta)
+            {
+                if (detalle.CodProducto == 0 || detalle.CodVenta == 0)
+                {
+                    return BadRequest("Cada detalle de venta debe tener un código de producto y un código de venta válido.");
+                }
+            }
+
+            try
+            {
+                // Llamar al servicio para guardar cada detalle de venta
+                await _detalleVentaService.CrearDetallesVentaAsync(detallesVenta);
+                return Ok(detallesVenta);
+            }
+            catch (DbUpdateException ex)
+            {
+                // Capturar y loguear la excepción de la base de datos
+                Console.WriteLine(ex.InnerException?.Message ?? ex.Message);
+                return StatusCode(500, "Ocurrió un error al guardar los detalles de venta.");
+            }
+        }
+
 
         // PUT: api/DetalleVenta/ActualizarDetalleVenta/5
         [HttpPut]
