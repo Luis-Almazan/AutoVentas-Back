@@ -1,4 +1,5 @@
 
+using AutoVentas_Back.DataAccess.Repositories;
 using AutoVentas_Back.Repositories;
 using AutoVentas_Back.Services;
 using AutoVentas_Back.Services.Interfaces;
@@ -33,7 +34,10 @@ builder.Services.AddScoped<IStatusVentaRepository, StatusVentaRepository>();
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<IDetalleVentaRepository, DetalleVentaRepository>();
 builder.Services.AddScoped<IVentaRepository, VentaRepository>();
-
+builder.Services.AddScoped<INotasCreditoRepository, NotasCreditoRepository>();
+builder.Services.AddScoped<IAnulacionVentaRepository, AnulacionVentaRepository>();
+builder.Services.AddScoped<IDevolucionProductoRepository, DevolucionProductoRepository>();
+builder.Services.AddScoped<IEntregaPaqueteRepository, EntregaPaqueteRepository>();
 
 
 // Registrar Sercicios
@@ -45,6 +49,10 @@ builder.Services.AddScoped<IStatusVentaService, StatusVentaService>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 builder.Services.AddScoped<IDetalleVentaService, DetalleVentaService>();
 builder.Services.AddScoped<IVentaService, VentaService>();
+builder.Services.AddScoped<INotasCreditoService, NotasCreditoService>();
+builder.Services.AddScoped<IAnulacionVentaService, AnulacionVentaService>();
+builder.Services.AddScoped<IDevolucionProductoService, DevolucionProductoService>();
+builder.Services.AddScoped<IEntregaPaqueteService, EntregaPaqueteService>();
 
 
 
