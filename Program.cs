@@ -15,12 +15,14 @@ builder.Services.AddControllers();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("PermitirAngularLocalhost", policy =>
-    {
-        policy.WithOrigins("http://localhost:4200")
-              .AllowAnyMethod()
-              .AllowAnyHeader();
-    });
+    options.AddPolicy("AllowAllOrigins",
+        builder =>
+        {
+            builder
+                .AllowAnyOrigin() // Permite cualquier origen
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+        });
 });
 
 
