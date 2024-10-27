@@ -103,7 +103,7 @@ builder.Services.AddDbContext<OperationContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
-app.UseCors("PermitirAngularLocalhost");
+app.UseCors("AllowAllOrigins");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
