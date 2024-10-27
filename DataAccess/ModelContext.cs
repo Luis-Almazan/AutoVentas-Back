@@ -46,6 +46,7 @@ public partial class ModelContext : DbContext
 
     public virtual DbSet<Ventum> Venta { get; set; }
 
+    public virtual DbSet<Bitacora> Bitacora { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder
@@ -422,7 +423,44 @@ public partial class ModelContext : DbContext
                 .HasConstraintName("VENTA_STATUS_VENTA_FK");
         });
 
+        modelBuilder.Entity<Bitacora>(entity =>
+        {
+            entity.HasKey(e => e.IdBitacora).HasName("SYS_C008369");
+
+            entity.ToTable("BITACORA");
+
+            entity.Property(e => e.IdBitacora)
+                .HasColumnType("NUMBER(38)")
+                .HasColumnName("ID_BITACORA");
+            entity.Property(e => e.CodRegistro)
+                .HasColumnType("NUMBER(38)")
+                .HasColumnName("COD_REGISTRO");
+            entity.Property(e => e.Descripcion)
+                .IsUnicode(false)
+                .HasColumnName("DESCRIPCION");
+            entity.Property(e => e.FechaOperacion)
+                .HasPrecision(6)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnName("FECHA_OPERACION");
+            entity.Property(e => e.Operacion)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .HasColumnName("OPERACION");
+            entity.Property(e => e.TablaNombre)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("TABLA_NOMBRE");
+            entity.Property(e => e.Usuario)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("USUARIO");
+        });
+        modelBuilder.HasSequence("SEQ_BITACORA");
+
+
         OnModelCreatingPartial(modelBuilder);
+    
+        
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

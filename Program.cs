@@ -38,7 +38,7 @@ builder.Services.AddScoped<INotasCreditoRepository, NotasCreditoRepository>();
 builder.Services.AddScoped<IAnulacionVentaRepository, AnulacionVentaRepository>();
 builder.Services.AddScoped<IDevolucionProductoRepository, DevolucionProductoRepository>();
 builder.Services.AddScoped<IEntregaPaqueteRepository, EntregaPaqueteRepository>();
-
+builder.Services.AddScoped<IBitacoraRepository, BitacoraRepository>();
 
 // Registrar Sercicios
 builder.Services.AddScoped<IClienteService, ClienteService>();
@@ -53,6 +53,7 @@ builder.Services.AddScoped<INotasCreditoService, NotasCreditoService>();
 builder.Services.AddScoped<IAnulacionVentaService, AnulacionVentaService>();
 builder.Services.AddScoped<IDevolucionProductoService, DevolucionProductoService>();
 builder.Services.AddScoped<IEntregaPaqueteService, EntregaPaqueteService>();
+builder.Services.AddScoped<IBitacoraService, BitacoraService>();
 
 
 

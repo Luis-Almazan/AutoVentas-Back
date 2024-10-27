@@ -1,4 +1,8 @@
-﻿--Secuencia
+﻿-- Comando migrar solo una tabla
+--dotnet ef dbcontext scaffold "User Id=OP_DESAWEB;Password=DESAWEB123;Data Source=34.172.95.117:1521/xe;" Oracle.EntityFrameworkCore -t BITACORA --context-dir DataAccess/ --output-dir DataAccess/Models --context ModelContext --force
+
+
+--Secuencia
 CREATE SEQUENCE SEQ_BITACORA START WITH 1 INCREMENT BY 1;
 
 --ANULACION
